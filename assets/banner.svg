@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <radialGradient id="glowPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .bg-grid { stroke: rgba(255, 255, 255, 0.04); stroke-width: 1; }
+    .pulse-glow { animation: pulseAnim 4s ease-in-out infinite alternate; }
+    @keyframes pulseAnim {
+      0% { opacity: 0.25; transform: scale(0.96); }
+      100% { opacity: 0.6; transform: scale(1.04); }
+    }
+    .flow-line {
+      stroke-dasharray: 8 12;
+      animation: dashFlow 20s linear infinite;
+    }
+    @keyframes dashFlow {
+      to { stroke-dashoffset: -200; }
+    }
+    .orbit-dot-1 {
+      animation: orbit1 8s linear infinite;
+    }
+    .orbit-dot-2 {
+      animation: orbit2 10s linear infinite;
+    }
+    .orbit-dot-3 {
+      animation: orbit3 12s linear infinite;
+    }
+    @keyframes orbit1 {
+      0% { cx: 200px; cy: 80px; }
+      50% { cx: 250px; cy: 110px; }
+      100% { cx: 200px; cy: 80px; }
+    }
+    @keyframes orbit2 {
+      0% { cx: 1000px; cy: 260px; }
+      50% { cx: 950px; cy: 230px; }
+      100% { cx: 1000px; cy: 260px; }
+    }
+    @keyframes orbit3 {
+      0% { cx: 1050px; cy: 90px; }
+      50% { cx: 1010px; cy: 120px; }
+      100% { cx: 1050px; cy: 90px; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Background Grid -->
+  <g class="bg-grid">
+    <line x1="100" y1="0" x2="100" y2="360" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="500" y1="0" x2="500" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="700" y1="0" x2="700" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+    <line x1="1100" y1="0" x2="1100" y2="360" />
+
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+  </g>
+
+  <!-- Ambient Pulsing Glow in Background (kept behind text) -->
+  <circle cx="600" cy="180" r="320" fill="url(#glowPulse)" class="pulse-glow" />
+
+  <!-- Dynamic Routing Animated Lines (Background Flow Paths) -->
+  <g opacity="0.35">
+    <path class="flow-line" d="M -50 80 Q 300 20, 600 120 T 1250 80" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+    <path class="flow-line" d="M -50 280 Q 350 340, 600 240 T 1250 290" fill="none" stroke="#c084fc" stroke-width="2.5" />
+    <path class="flow-line" d="M 150 360 Q 400 140, 600 180 T 1050 0" fill="none" stroke="#818cf8" stroke-width="2" />
+  </g>
+
+  <!-- Floating Dynamic Tech Particles/Nodes -->
+  <circle class="orbit-dot-1" cx="200" cy="80" r="4.5" fill="#38bdf8" filter="url(#neon)" />
+  <circle class="orbit-dot-2" cx="1000" cy="260" r="4.5" fill="#c084fc" filter="url(#neon)" />
+  <circle class="orbit-dot-3" cx="1050" cy="90" r="4" fill="#818cf8" filter="url(#neon)" />
+
+  <!-- Channel Nodes / Routing Badges (Anchored at Bottom Foreground) -->
+  <g transform="translate(180, 290)">
+    <!-- Voice -->
+    <rect x="0" y="0" width="130" height="34" rx="17" fill="rgba(30, 41, 59, 0.85)" stroke="#38bdf8" stroke-width="1.2" />
+    <text x="65" y="21" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">📞 Voice &amp; SIP</text>
+
+    <!-- Email -->
+    <rect x="145" y="0" width="130" height="34" rx="17" fill="rgba(30, 41, 59, 0.85)" stroke="#818cf8" stroke-width="1.2" />
+    <text x="210" y="21" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">✉️ Smart Email</text>
+
+    <!-- Chat & SMS -->
+    <rect x="290" y="0" width="145" height="34" rx="17" fill="rgba(30, 41, 59, 0.85)" stroke="#a855f7" stroke-width="1.2" />
+    <text x="362" y="21" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">💬 Live Chat &amp; SMS</text>
+
+    <!-- Skill Routing -->
+    <rect x="450" y="0" width="170" height="34" rx="17" fill="rgba(30, 41, 59, 0.85)" stroke="#ec4899" stroke-width="1.2" />
+    <text x="535" y="21" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🎯 Skill-Based Queues</text>
+
+    <!-- AI Dispatch -->
+    <rect x="635" y="0" width="165" height="34" rx="17" fill="rgba(30, 41, 59, 0.85)" stroke="#10b981" stroke-width="1.2" />
+    <text x="717" y="21" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🤖 AI Agent Dispatch</text>
+  </g>
+
+  <!-- FOREGROUND TEXT (Crystal clear, high contrast, permanent foreground) -->
+  <!-- Top Category Tag -->
+  <g transform="translate(600, 75)">
+    <rect x="-140" y="-16" width="280" height="30" rx="15" fill="rgba(99, 102, 241, 0.2)" stroke="#6366f1" stroke-width="1" />
+    <text x="0" y="4" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">ENTERPRISE CCaaS &amp; OPEN SOURCE</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="152" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" text-anchor="middle" filter="url(#shadow)" letter-spacing="-0.5">
+    Awesome Omnichannel Contact Routing
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="200" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" text-anchor="middle" filter="url(#shadow)">
+    Curated Ecosystem of Intelligent Contact Center Orchestration, Work Distribution &amp; Telephony Engines
+  </text>
+
+  <!-- Feature Highlights Line -->
+  <text x="600" y="235" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle">
+    Voice • Video • Web Chat • Email • SMS • WhatsApp • SLA Prioritization • Skills-Based Assignment • Telephony Gateways
+  </text>
+</svg>
