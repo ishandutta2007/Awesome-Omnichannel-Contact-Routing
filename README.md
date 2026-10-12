@@ -15,42 +15,30 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The global Contact Center as a Service (CCaaS) market is estimated at approximately **$8.0B – $9.5B in 2026** (with the broader contact center software market exceeding **$50B+**), expanding at a CAGR of ~17–19%. The market is **moderately concentrated** at the top tier—where leaders like Amazon Web Services, Salesforce, Genesys, NICE, and Five9 capture ~45% of enterprise spend—yet remains **fragmented across mid-market and specialized verticals** due to the proliferation of conversational AI agents, open APIs, and regional compliance requirements.
+
 ## SaaS/Hosted Platforms
 
-- **[Salesforce Omni-Channel Routing](https://www.salesforce.com/service/omni-channel/)**  
-  Unified routing engine within Service Cloud that distributes work across channels based on agent capacity, skills, and priority.
-
-- **[Genesys Cloud CX](https://www.genesys.com/genesys-cloud)**  
-  Enterprise contact center platform with predictive routing, omnichannel queuing, and AI-driven agent matching.
-
-- **[NICE CXone](https://www.nice.com/cxone)**  
-  Cloud contact center suite with intelligent omnichannel routing, skills-based assignment, and workforce optimization.
-
-- **[Twilio TaskRouter](https://www.twilio.com/taskrouter)**  
-  Programmable routing engine that assigns tasks to workers based on skills, availability, and custom workflows.
-
-- **[Talkdesk Omnichannel](https://www.talkdesk.com/)**  
-  Cloud contact center platform with omnichannel routing, AI-powered agent assist, and real-time queue analytics.
-
-- **[Five9 Intelligent Routing](https://www.five9.com/)**  
-  AI-driven routing engine for voice, chat, email, and social channels with predictive engagement and skills matching.
-
-- **[8x8 Contact Center](https://www.8x8.com/)**  
-  Unified communications and contact center platform with omnichannel routing and real-time queue management.
-
-- **[AWS Amazon Connect](https://aws.amazon.com/connect/)**  
-  Cloud contact center service with skills-based routing, real-time metrics, and pay-as-you-go pricing.
-
-- **[Freshdesk Omnichannel](https://www.freshworks.com/freshdesk/)**  
-  Support platform with omnichannel routing across email, chat, phone, and social with automation rules.
-
-- **[Zendesk Omnichannel Routing](https://www.zendesk.com/)**  
-  Customer service suite with omnichannel ticket routing, skills-based assignment, and intelligent triage.
+| Platform | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[AWS Amazon Connect](https://aws.amazon.com/connect/)** | ~$2.1T+ Market Cap (Amazon) / $100B+ AWS ARR | $0.018/min (voice) & $0.004/msg (chat) | AWS Free Plan: up to 6 months ($100 promotional credits); Customer Profiles free for standard data | Cloud contact center service with skills-based routing, real-time metrics, and pay-as-you-go pricing. |
+| **[Salesforce Omni-Channel Routing](https://www.salesforce.com/service/omni-channel/)** | ~$188B+ Market Cap / $37.9B ARR | $25/user/month (Starter Suite) | 30-day free trial with pre-loaded sample data and full Service Cloud workflows | Unified routing engine within Service Cloud that distributes work across channels based on agent capacity, skills, and priority. |
+| **[Twilio TaskRouter](https://www.twilio.com/taskrouter)** | ~$42B+ Market Cap / $5.0B ARR | $0.06 per task (or Twilio Flex from $1/active user-hour) | Free forever: First 100 tasks/month free; plus standard $15 trial credits on signup | Programmable routing engine that assigns tasks to workers based on skills, availability, and custom workflows. |
+| **[Genesys Cloud CX](https://www.genesys.com/genesys-cloud)** | ~$15B Valuation / $2.6B ARR | $75/user/month (CX 1 - Voice, billed annually) | 30-day GCXNow free trial (capped at 10-min calls, limited test users & messages) | Enterprise contact center platform with predictive routing, omnichannel queuing, and AI-driven agent matching. |
+| **[Zendesk Omnichannel Routing](https://www.zendesk.com/)** | ~$10.2B Acquisition Valuation / $2.0B ARR | $55/agent/month (Suite Team, billed annually) | 14-day free trial with full Zendesk Suite Professional access (no agent cap, extendable) | Customer service suite with omnichannel ticket routing, skills-based assignment, and intelligent triage. |
+| **[Talkdesk Omnichannel](https://www.talkdesk.com/)** | ~$10.0B Valuation / ~$350M–$420M ARR | $85/user/month (Digital Essentials, 3-yr commitment) | 15-day free trial (Talkdesk Express: up to 10 users, $100 calling credits) | Cloud contact center platform with omnichannel routing, AI-powered agent assist, and real-time queue analytics. |
+| **[NICE CXone](https://www.nice.com/cxone)** | ~$6.9B Market Cap / $2.9B ARR | ~$110/agent/month (Digital/Voice Suites entry tier) | No self-serve trial; custom POC/demo provisioned upon sales qualification | Cloud contact center suite with intelligent omnichannel routing, skills-based assignment, and workforce optimization. |
+| **[Freshdesk Omnichannel](https://www.freshworks.com/freshdesk/)** | ~$3.6B Market Cap / $839M ARR | $29/agent/month (Growth Omnichannel, billed annually) | 14-day full feature trial; separate Free Program for up to 2 agents (6-month limit) | Support platform with omnichannel routing across email, chat, phone, and social with automation rules. |
+| **[Five9 Intelligent Routing](https://www.five9.com/)** | ~$2.6B Market Cap / $1.1B ARR | $119/user/month (Digital tier, 50-seat minimum) | No self-serve trial; proof-of-concept and guided sandbox available via sales | AI-driven routing engine for voice, chat, email, and social channels with predictive engagement and skills matching. |
+| **[8x8 Contact Center](https://www.8x8.com/)** | ~$300M Market Cap / $715M ARR | ~$60–$85/user/month (X6 Voice CC tier estimate) | 30-day free trial for 8x8 Express/UCaaS; CCaaS evaluated via customized sales demo | Unified communications and contact center platform with omnichannel routing and real-time queue management. |
 
 ## Open-Source GitHub Projects
 
